@@ -1,0 +1,19 @@
+.screen {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.screen.show {
+  opacity: 1;
+}
+
+.screen.hide {
+  opacity: 0;
+}
+
+.screen::before {
+  content: "";
+  position: absolute;
+  background-color: #242e2e;
+  inset: 0.5px;
+}
